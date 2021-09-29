@@ -339,11 +339,10 @@ class UserController extends Controller {
 <br />
 
 Postman Registration Api
-![alt text](https://github.com/HMDCrew/Laravel-Backend-Api/blob/master/GitImages/register_api.PNG?raw=true)
-
+![alt text](https://github.com/HMDCrew/Laravel-Backend-Api/blob/master/GitImages/register_api.png?raw=true)
 
 Postman Login Api
-![image](https://drive.google.com/uc?export=view&id=18hjF5Shz8pRFvKMS3kjoVIoXjxayQJGe)
+![alt text](https://github.com/HMDCrew/Laravel-Backend-Api/blob/master/GitImages/login_api.png?raw=true)
 
 Postman View Profile Api
-![image](https://drive.google.com/uc?export=view&id=12yZhM_EzK0HnzYobCAcHXAYaA1YB_Xfi)
+![alt text](https://github.com/HMDCrew/Laravel-Backend-Api/blob/master/GitImages/view-profile.png?raw=true)
