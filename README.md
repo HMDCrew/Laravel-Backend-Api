@@ -339,10 +339,10 @@ class UserController extends Controller {
 <br />
 
 Postman Registration Api
-![alt text](https://cloud.nis.md/s/4PiyLn7jGSTWizP/preview)
+![myimage-alt-tag](https://cloud.nis.md/s/4PiyLn7jGSTWizP/preview)
 
 Postman Login Api
-![alt text](https://cloud.nis.md/s/4PiyLn7jGSTWizP/preview)
+![myimage-alt-tag](https://cloud.nis.md/s/4PiyLn7jGSTWizP/preview)
 
 Postman View Profile Api
-![alt text](https://cloud.nis.md/s/mFoRg8qD8WxjMPo/preview)
+![myimage-alt-tag](https://cloud.nis.md/s/mFoRg8qD8WxjMPo/preview)
