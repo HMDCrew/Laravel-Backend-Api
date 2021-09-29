@@ -7,7 +7,7 @@
 
 
 
-    ## Edit and update: 
+## Edit and update: 
     /database/migrations/timestamp_create_users_table.php
 
 
@@ -33,7 +33,7 @@ public function up() {
 
 
 
-    ## Edit and update:
+## Edit and update:
     /app/Models/User.php
 
 
@@ -46,7 +46,7 @@ class User extends Authenticatable {
 }
 ```
 
-    ## Edit and update:
+## Edit and update:
     /app/Providers/AuthServiceProvider.php
 
 
@@ -69,7 +69,7 @@ class AuthServiceProvider extends ServiceProvider {
 ```
     
     
-    ## Edit and update:
+## Edit and update:
     /config/auth.php
     
     
@@ -107,7 +107,7 @@ return [
     php artisan make:middleware CORSMiddleware
 
 
-    ## Edit and update:
+## Edit and update:
     /app/Http/Middleware/CORSMiddleware.php
 
 
@@ -140,7 +140,7 @@ class CORSMiddleware {
 ```
    
    
-    ## Edit and update:
+## Edit and update:
     /app/Http/Kernel.php
 
 
@@ -177,7 +177,7 @@ class Kernel extends HttpKernel {
 ```
 
     
-    ## Edit and update:
+## Edit and update:
     /routes/api.php
 
 
@@ -200,7 +200,7 @@ Route::group(['prefix' => 'users', 'middleware' => 'CORS'], function ($router) {
 ```
     
     
-    ## Edit and update:
+## Edit and update:
     /app/Http/Controllers/Controller.php
 
 
@@ -229,7 +229,7 @@ class Controller extends BaseController {
     php artisan make:controller UserController
 
 
-    ## Edit and update:
+## Edit and update:
     /app/Http/Controllers/UserController.php
 
 
