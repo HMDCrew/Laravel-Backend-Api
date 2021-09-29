@@ -5,8 +5,6 @@
 
     composer require laravel/passport
 
-
-
 ## Edit and update: 
    */database/migrations/timestamp_create_users_table.php*
 
@@ -331,9 +329,7 @@ class UserController extends Controller {
     }
 }
 ```
-
-
-    
+   
 Postman Registration Api
 ![alt text](https://cloud.nis.md/s/4PiyLn7jGSTWizP/preview)
 
