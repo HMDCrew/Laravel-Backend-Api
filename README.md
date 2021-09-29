@@ -21,7 +21,9 @@ public function up() {
     });
 }
 ```
-    
+<br />
+<br />
+
     php artisan migrate
     php artisan passport:install
 
@@ -89,6 +91,8 @@ return [
     …
 ];
 ```
+<br />
+<br />
 
     php artisan make:middleware CORSMiddleware
 
@@ -201,7 +205,9 @@ class Controller extends BaseController {
     }
 }
 ```    
-    
+<br />
+<br />
+
     
     php artisan make:controller UserController
 
@@ -329,12 +335,5 @@ class UserController extends Controller {
     }
 }
 ```
-   
-Postman Registration Api
-![alt text](https://cloud.nis.md/s/4PiyLn7jGSTWizP/preview)
-
-Postman Login Api
-![alt text](https://cloud.nis.md/s/4PiyLn7jGSTWizP/preview)
-
-Postman View Profile Api
-![alt text](https://cloud.nis.md/s/mFoRg8qD8WxjMPo/preview)
+<br />
+<br />
