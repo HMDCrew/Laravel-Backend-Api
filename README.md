@@ -1,12 +1,15 @@
 # laravel
 
-> composer create-project — prefer-dist laravel/*<name-of-app>*
-cd <name-of-app>
+    composer create-project — prefer-dist laravel/*<name-of-app>*
+    cd <name-of-app>
 
-> composer require laravel/passport
-    
-## Edit and update: 
+    composer require laravel/passport
+
+
+
+    ## Edit and update: 
     /database/migrations/timestamp_create_users_table.php
+
 
 */timestamp_create_users_table.php*
 ```php
@@ -23,11 +26,17 @@ public function up() {
 }
 ```
     
-> php artisan migrate
-> php artisan passport:install
 
-## Edit and update:
+
+    php artisan migrate
+    php artisan passport:install
+
+
+
+    ## Edit and update:
     /app/Models/User.php
+
+
 *User.php*
 ```php
 use Laravel\Passport\HasApiTokens;
@@ -37,10 +46,11 @@ class User extends Authenticatable {
 }
 ```
 
-## Edit and update:
+    ## Edit and update:
     /app/Providers/AuthServiceProvider.php
-*AuthServiceProvider.php*
 
+
+*AuthServiceProvider.php*
 ```php
 namespace App\Providers;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -58,8 +68,11 @@ class AuthServiceProvider extends ServiceProvider {
 }
 ```
     
-## Edit and update:
+    
+    ## Edit and update:
     /config/auth.php
+    
+    
 *auth.php*
 ```php
 return [
@@ -91,10 +104,14 @@ return [
 ];
 ```
 
-> php artisan make:middleware CORSMiddleware
-## Edit and update:
+    php artisan make:middleware CORSMiddleware
+
+
+    ## Edit and update:
     /app/Http/Middleware/CORSMiddleware.php
-    
+
+
+*CORSMiddleware.php*
 ```php
 *CORSMiddleware.php*
 …
@@ -121,9 +138,12 @@ class CORSMiddleware {
     }
 }
 ```
-    
-## Edit and update:
+   
+   
+    ## Edit and update:
     /app/Http/Kernel.php
+
+
 *Kernel.php*
 ```php
 namespace App\Http;
@@ -156,10 +176,12 @@ class Kernel extends HttpKernel {
 }
 ```
 
-## Edit and update:
+    
+    ## Edit and update:
     /routes/api.php
-*api.php*
 
+
+*api.php*
 ```php
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -177,10 +199,12 @@ Route::group(['prefix' => 'users', 'middleware' => 'CORS'], function ($router) {
 }); 
 ```
     
-## Edit and update:
+    
+    ## Edit and update:
     /app/Http/Controllers/Controller.php
-*Controller.php*
 
+
+*Controller.php*
 ```php
 namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -201,10 +225,14 @@ class Controller extends BaseController {
 }
 ```    
     
-> php artisan make:controller UserController
+    
+    php artisan make:controller UserController
 
-## Edit and update:
+
+    ## Edit and update:
     /app/Http/Controllers/UserController.php
+
+
 *UserController.php*
 ```php
 namespace App\Http\Controllers;
@@ -326,30 +354,14 @@ class UserController extends Controller {
     }
 }
 ```
+
+
     
 Postman Registration Api
-![alt text](https://cloud.nis.md/s/4PiyLn7jGSTWizP)
+![alt text](https://cloud.nis.md/s/4PiyLn7jGSTWizP/preview)
 
 Postman Login Api
-![alt text](https://cloud.nis.md/s/4PiyLn7jGSTWizP)
+![alt text](https://cloud.nis.md/s/4PiyLn7jGSTWizP/preview)
 
 Postman View Profile Api
-![alt text](https://cloud.nis.md/s/mFoRg8qD8WxjMPo)
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+![alt text](https://cloud.nis.md/s/mFoRg8qD8WxjMPo/preview)
