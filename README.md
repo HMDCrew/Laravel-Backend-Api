@@ -1,4 +1,4 @@
-# laravel
+# Laravel Backend with JWT Auth
 
     composer create-project — prefer-dist laravel/*<name-of-app>*
     cd <name-of-app>
