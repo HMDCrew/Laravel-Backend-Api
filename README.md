@@ -60,7 +60,7 @@ class AuthServiceProvider extends ServiceProvider {
     
     
 ## Edit and update:
-   *config/auth.php*
+   */config/auth.php*
 
 ```php
 return [
