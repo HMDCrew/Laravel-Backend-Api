@@ -8,10 +8,8 @@
 
 
 ## Edit and update: 
-    /database/migrations/timestamp_create_users_table.php
+   */database/migrations/timestamp_create_users_table.php*
 
-
-*/timestamp_create_users_table.php*
 ```php
 public function up() {
     Schema::create('users', function (Blueprint $table) {
@@ -26,18 +24,12 @@ public function up() {
 }
 ```
     
-
-
     php artisan migrate
     php artisan passport:install
 
-
-
 ## Edit and update:
-    /app/Models/User.php
+   */app/Models/User.php*
 
-
-*User.php*
 ```php
 use Laravel\Passport\HasApiTokens;
 class User extends Authenticatable {
@@ -47,10 +39,8 @@ class User extends Authenticatable {
 ```
 
 ## Edit and update:
-    /app/Providers/AuthServiceProvider.php
+   */app/Providers/AuthServiceProvider.php*
 
-
-*AuthServiceProvider.php*
 ```php
 namespace App\Providers;
 use Illuminate\Foundation\Support\Providers\AuthServiceProvider as ServiceProvider;
@@ -70,10 +60,8 @@ class AuthServiceProvider extends ServiceProvider {
     
     
 ## Edit and update:
-    /config/auth.php
-    
-    
-*auth.php*
+   *config/auth.php*
+
 ```php
 return [
     …
@@ -108,12 +96,9 @@ return [
 
 
 ## Edit and update:
-    /app/Http/Middleware/CORSMiddleware.php
+   */app/Http/Middleware/CORSMiddleware.php*
 
-
-*CORSMiddleware.php*
 ```php
-*CORSMiddleware.php*
 …
 class CORSMiddleware {
     public function handle( Request $request, Closure $next ) {
@@ -141,10 +126,8 @@ class CORSMiddleware {
    
    
 ## Edit and update:
-    /app/Http/Kernel.php
+   */app/Http/Kernel.php*
 
-
-*Kernel.php*
 ```php
 namespace App\Http;
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
@@ -178,10 +161,8 @@ class Kernel extends HttpKernel {
 
     
 ## Edit and update:
-    /routes/api.php
+   */routes/api.php*
 
-
-*api.php*
 ```php
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -201,10 +182,8 @@ Route::group(['prefix' => 'users', 'middleware' => 'CORS'], function ($router) {
     
     
 ## Edit and update:
-    /app/Http/Controllers/Controller.php
+   */app/Http/Controllers/Controller.php*
 
-
-*Controller.php*
 ```php
 namespace App\Http\Controllers;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
@@ -230,10 +209,8 @@ class Controller extends BaseController {
 
 
 ## Edit and update:
-    /app/Http/Controllers/UserController.php
+   */app/Http/Controllers/UserController.php*
 
-
-*UserController.php*
 ```php
 namespace App\Http\Controllers;
 
